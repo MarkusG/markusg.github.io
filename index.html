@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div id="index-container">
+	{%- include sidebar.html -%}
+	<div id="index-content">
+		<h1>Recent Posts</h1>
+		{%- for post in site.posts -%}
+		<a href="{{ post.url }}"><h2 class="post-title">{{ post.title | escape }}</h2></a>
+		<p>{{ post.excerpt }}</p>
+		<hr>
+		{%- endfor -%}
+	</div>
+</div>
