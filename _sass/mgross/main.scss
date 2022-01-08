@@ -97,8 +97,17 @@ nav {
 }
 
 #index-content h2 {
-	//font-size: 3rem;
 	margin-bottom: 0;
+}
+
+#index-content h3 {
+	font-weight: normal;
+	font-size: 1rem;
+	margin-top: .5rem;
+}
+
+#index-content hr {
+	border-bottom: 0;
 }
 
 

@@ -8,7 +8,7 @@ layout: default
 		<h1>Recent Posts</h1>
 		{%- for post in site.posts -%}
 		<a href="{{ post.url }}"><h2 class="post-title">{{ post.title | escape }}</h2></a>
-		<p>{{ post.excerpt }}</p>
+		<h3>{{ post.date | date: "%B %d, %Y" }}</h3>
 		<hr>
 		{%- endfor -%}
 	</div>
