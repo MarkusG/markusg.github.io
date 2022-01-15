@@ -6,6 +6,23 @@ body {
 	margin: 0;
 }
 
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.post-title {
+	font-weight: normal;
+	font-size: 1.4rem;
+	margin-bottom: 0;
+}
+
+.post-date {
+	font-weight: normal;
+	font-size: 1rem;
+	margin-top: .5rem;
+}
+
 // nav.html
 
 nav {
@@ -112,22 +129,7 @@ nav {
 	font-size: 1.3rem;
 }
 
-.post-title a, #nav-links a {
-	color: black;
-	text-decoration: none;
-}
-
-.post-title {
-	font-weight: normal;
-	font-size: 1.4rem;
-	margin-bottom: 0;
-}
-
-.post-date {
-	font-weight: normal;
-	font-size: 1rem;
-	margin-top: .5rem;
-}
+// archive.html
 
 .archive-year {
 	margin-bottom: -.5rem;
