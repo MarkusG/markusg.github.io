@@ -100,12 +100,6 @@ nav {
 	margin-bottom: 0;
 }
 
-#index-content h3 {
-	font-weight: normal;
-	font-size: 1rem;
-	margin-top: .5rem;
-}
-
 #index-content hr {
 	border-bottom: 0;
 }
@@ -118,7 +112,7 @@ nav {
 	font-size: 1.3rem;
 }
 
-#index-content a, #nav-links a {
+.post-title a, #nav-links a {
 	color: black;
 	text-decoration: none;
 }
@@ -126,4 +120,19 @@ nav {
 .post-title {
 	font-weight: normal;
 	font-size: 1.4rem;
+	margin-bottom: 0;
+}
+
+.post-date {
+	font-weight: normal;
+	font-size: 1rem;
+	margin-top: .5rem;
+}
+
+.archive-year {
+	margin-bottom: -.5rem;
+}
+
+.archive-year:not(:first-child) {
+	margin-top: 2rem;
 }
