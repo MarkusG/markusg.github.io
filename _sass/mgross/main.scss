@@ -21,25 +21,6 @@ h3 {
 	font-weight: normal;
 }
 
-@media screen and (max-width: 960px) {
-	h1 {
-		font-size: 8rem;
-		margin-bottom: 0;
-	}
-
-	h2 {
-		font-size: 3rem;
-	}
-
-	h3 {
-		font-size: 2rem;
-	}
-
-	.container {
-		text-align: center;
-	}
-}
-
 a {
 	color: black;
 	text-decoration: none;
@@ -59,6 +40,13 @@ a {
 	width: 960px;
 	max-width: 90%;
 	margin: 1rem auto 0 auto;
+}
+
+@media screen and (max-width: 960px) {
+	.container {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
 }
 
 // nav.html
@@ -140,24 +128,18 @@ nav {
 	}
 
 	#avatar {
-		width: 500px;
-		height: 500px;
-		border-radius: 20px;
+		width: 300px;
+		height: 300px;
 	}
 
 	#profile-name {
-		font-size: 5rem;
 		margin-bottom: 0;
 	}
 
 	.icon-group {
-		margin-top: 1rem;
+		margin-top: .5em;
 		justify-content: center;
-		gap: 4rem;
-	}
-
-	.profile-icon {
-		width: 64px;
+		gap: 1.5em;
 	}
 }
 
@@ -168,11 +150,8 @@ nav {
 	gap: 2rem;
 }
 
-@media screen and (max-width: 1200px) {
-	#index-container {
-		display: flex;
-		flex-direction: column;
-	}
+#index-content h1 {
+	margin-bottom: 2rem;
 }
 
 #index-content hr {
@@ -180,7 +159,7 @@ nav {
 }
 
 .index-post {
-	margin-bottom: 1.5rem;
+	margin-bottom: 1.5em;
 }
 
 #view-all-posts {
@@ -189,6 +168,17 @@ nav {
 
 #view-all-posts a {
 	font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1200px) {
+	#index-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.index-post {
+		margin-bottom: 2em;
+	}
 }
 
 // archive.html
