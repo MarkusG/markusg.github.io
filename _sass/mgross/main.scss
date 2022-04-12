@@ -26,6 +26,10 @@ a {
 	text-decoration: none;
 }
 
+.post {
+	margin-bottom: 1.5em;
+}
+
 .post-title {
 	font-weight: normal;
 	margin-bottom: 0;
@@ -46,6 +50,10 @@ a {
 	.container {
 		text-align: center;
 		margin-bottom: 2rem;
+	}
+
+	.post {
+		margin-bottom: 2em;
 	}
 }
 
@@ -158,10 +166,6 @@ nav {
 	border-bottom: 0;
 }
 
-.index-post {
-	margin-bottom: 1.5em;
-}
-
 #view-all-posts {
 	margin-top: 2.4rem;
 }
@@ -175,10 +179,6 @@ nav {
 		display: flex;
 		flex-direction: column;
 	}
-
-	.index-post {
-		margin-bottom: 2em;
-	}
 }
 
 // archive.html
@@ -189,4 +189,10 @@ nav {
 
 .archive-year:not(:first-child) {
 	margin-top: 2rem;
+}
+
+@media screen and (max-width: 960px) {
+	.archive-year {
+		font-size: 4rem;
+	}
 }
