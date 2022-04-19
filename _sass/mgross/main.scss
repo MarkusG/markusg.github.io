@@ -14,6 +14,7 @@ h1 {
 
 h2 {
 	font-weight: normal;
+	font-size: 2rem;
 	margin-bottom: 0;
 }
 
@@ -26,12 +27,27 @@ a {
 	text-decoration: none;
 }
 
+img {
+	max-width: 100%;
+}
+
+p {
+	text-align: justify;
+}
+
+pre.highlight {
+	overflow-x: auto;
+	background-color: #ddd;
+	padding: 8px;
+}
+
 .post {
 	margin-bottom: 1.5em;
 }
 
 .post-title {
 	font-weight: normal;
+	font-size: 1.5rem;
 	margin-bottom: 0;
 }
 
@@ -41,23 +57,22 @@ a {
 }
 
 .container {
-	width: 1280px;
+	width: 1200px;
 	max-width: 90%;
 	margin: 1rem auto 0 auto;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 768px) {
 	.container {
-		text-align: center;
 		margin-bottom: 2rem;
+	}
+
+	#index-content {
+		text-align: center;
 	}
 
 	.post {
 		margin-bottom: 2em;
-	}
-
-	html {
-		font-size: 2rem;
 	}
 }
 
@@ -68,7 +83,7 @@ nav {
 }
 
 #nav-container {
-	width: 1280px;
+	width: 1200px;
 	max-width: 90%;
 	margin: auto;
 	display: flex;
@@ -91,7 +106,7 @@ nav {
 	font-size: 1.3rem;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 768px) {
 	#nav-container {
 		flex-direction: column;
 		align-items: center;
@@ -139,14 +154,14 @@ nav {
 	width: 24px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 768px) {
 	#profile {
 		text-align: center;
 	}
 
 	#avatar {
-		width: 512px;
-		height: 512px;
+		width: 300px;
+		height: 300px;
 	}
 
 	#profile-name {
@@ -160,7 +175,7 @@ nav {
 	}
 
 	.profile-icon {
-		width: 72px;
+		width: 48px;
 	}
 }
 
@@ -169,6 +184,10 @@ nav {
 #index-container {
 	display: flex;
 	gap: 2rem;
+}
+
+#profile {
+	min-width: 200px;
 }
 
 #index-content h1 {
@@ -187,7 +206,7 @@ nav {
 	font-size: 1.3rem;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 768px) {
 	#index-container {
 		display: flex;
 		flex-direction: column;
@@ -195,6 +214,10 @@ nav {
 }
 
 // archive.html
+
+.archive {
+	text-align: center;
+}
 
 .archive-year {
 	margin-bottom: -.5rem;
@@ -204,7 +227,7 @@ nav {
 	margin-top: 2rem;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 768px) {
 	.archive-year {
 		font-size: 4rem;
 	}

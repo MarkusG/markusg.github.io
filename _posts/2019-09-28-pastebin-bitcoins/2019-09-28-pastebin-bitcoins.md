@@ -5,7 +5,7 @@ date: 2019-09-28
 draft: false
 ---
 
-# Amendment 2020-08-19
+## Amendment 2020-08-19
 At the time I did this, I was careless and ignorant regarding the legal and ethical implications of my actions. I considered taking this post down, but decided to leave it up for transparency's sake. You should never access a computer that you are not authorized to, even if you think it's being used for a malicious purpose. If you want to explore and experiment with this type of thing, check out [OverTheWire](https://overthewire.org/wargames/) and [Hack The Box](https://www.hackthebox.eu/).
 
 --
