@@ -84,6 +84,13 @@ pre.highlight {
 	margin: 1rem auto 0 auto;
 }
 
+#back-to-top {
+	display: block;
+	text-align: center;
+	margin-top: 4em;
+	text-decoration: underline;
+}
+
 @media screen and (max-width: 768px) {
 	.container {
 		margin-bottom: 2rem;
@@ -253,4 +260,10 @@ nav {
 	.archive-year {
 		font-size: 4rem;
 	}
+}
+
+// post.html
+
+.post-content {
+	margin-bottom: 50vh;
 }
