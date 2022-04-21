@@ -5,7 +5,7 @@ date: 2021-10-12
 draft: false
 ---
 
-My most recent project uses ASP.NET Core's Razor pages its web app functionality. It uses Entity Framework for data storage, and I decided to use [d3](https://d3js.org/) to visualize some of that data. This led to the question of how to get the data from my C# code to the JavaScript code that calls d3. As it turns out, the solution is quite simple. Say there's some property `Datapoints` on the page's viewmodel. One could pass this data to JavaScript as follows:
+My most recent project uses ASP.NET Core's Razor pages for its web app functionality. It uses Entity Framework for data storage, and I decided to use [d3](https://d3js.org/) to visualize some of that data. This led to the question of how to get the data from my C# code to the JavaScript code that calls d3. As it turns out, the solution is quite simple. Say there's some property `Datapoints` on the page's viewmodel. One could pass this data to JavaScript as follows:
 ```html
 <script type="text/javascript">
 const data = @Html.Raw(JsonSerializer.Serialize(Model.Datapoints));
