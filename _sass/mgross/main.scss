@@ -38,6 +38,17 @@ blockquote {
 	padding-left: 1em;
 }
 
+table {
+	table-layout: fixed;
+	border-collapse: collapse;
+	margin: 1.12em 0;
+}
+
+th, td {
+	border: 1px solid black;
+	padding: 4px 8px;
+}
+
 p {
 	text-align: justify;
 }
