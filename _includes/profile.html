@@ -1,13 +1,17 @@
 <div id="profile">
-	<img id="avatar" src="/assets/avatar.webp">
+	<img id="avatar" src="{{ site.you.avatar }}">
 	<div class="profile-details">
-		<!-- TODO parameterize -->
-		<h1 id="profile-name">Mark Gross</h1>
+		<h1 id="profile-name">{{ site.you.name }}</h1>
 		<div class="icon-group">
-			<!-- TODO parameterize -->
-			<a href="https://github.com/MarkusG"><img class="profile-icon" src="/assets/svg/github.svg"></a>
-			<a href="https://www.linkedin.com/in/mark-gross-a73266173/"><img class="profile-icon" src="/assets/svg/linkedin.svg"></a>
-			<a href="/assets/pubkey.txt"><img class="profile-icon" src="/assets/svg/key.svg"></a>
+			{% if site.you.github %}
+			<a href="{{ site.you.github }}"><img class="profile-icon" src="/assets/svg/github.svg"></a>
+			{% endif %}
+			{% if site.you.linkedin %}
+			<a href="{{ site.you.linkedin }}"><img class="profile-icon" src="/assets/svg/linkedin.svg"></a>
+			{% endif %}
+			{% if site.you.pubkey %}
+			<a href="{{ site.you.pubkey }}"><img class="profile-icon" src="/assets/svg/key.svg"></a>
+			{% endif %}
 		</div>
 	</div>
 </div>
