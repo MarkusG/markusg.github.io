@@ -1,4 +1,4 @@
-you:
+you: # your information
   name: Mark Gross
   avatar: /assets/avatar.webp
   github: https://github.com/MarkusG
@@ -6,4 +6,4 @@ you:
   pubkey: /assets/pubkey.txt
 
 sass:
-  style: compressed
+  style: compressed # saves us some bandwidth
