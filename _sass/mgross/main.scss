@@ -250,10 +250,6 @@ nav a {
 
 // archive.html
 
-.archive {
-	text-align: center;
-}
-
 .archive-year {
 	margin-bottom: -.5rem;
 }
@@ -263,8 +259,8 @@ nav a {
 }
 
 @media screen and (max-width: 768px) {
-	.archive-year {
-		font-size: 4rem;
+	.archive {
+		text-align: center;
 	}
 }
 
