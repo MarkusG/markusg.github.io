@@ -1,9 +1,9 @@
 you: # your information
   name: Mark Gross
-  avatar: /assets/avatar.webp
+  avatar: assets/avatar.webp
   github: https://github.com/MarkusG
   linkedin: https://www.linkedin.com/in/mark-gross-a73266173/
-  pubkey: /assets/pubkey.txt
+  pubkey: assets/pubkey.txt
 
 sass:
   style: compressed # saves us some bandwidth
