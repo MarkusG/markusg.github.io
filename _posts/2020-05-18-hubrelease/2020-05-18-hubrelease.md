@@ -5,7 +5,7 @@ date: 2020-05-18
 draft: false
 ---
 
-I grew tired of having to navigate GitHub's webpages in order to create releases on my repositories, so I decided to automate the process. It started as an [80 line bash script](https://gist.github.com/MarkusG/d3782b90d0f79754e76acf1f58334c63) specifically for my last project, [shshare](https://markgross.me/2019/07/19/first-aur-package), but then I got the itch to generalize it and release it to the public. I also wanted a way to show off my C knowledge on my GitHub profile, so [hubrelease](https://github.com/MarkusG/hubrelease) was born.
+I grew tired of having to navigate GitHub's webpages in order to create releases on my repositories, so I decided to automate the process. It started as an [80 line bash script](https://gist.github.com/MarkusG/d3782b90d0f79754e76acf1f58334c63) specifically for my last project, [shshare](/2019/07/19/first-aur-package), but then I got the itch to generalize it and release it to the public. I also wanted a way to show off my C knowledge on my GitHub profile, so [hubrelease](https://github.com/MarkusG/hubrelease) was born.
 
 ## Humble Beginnings
 
