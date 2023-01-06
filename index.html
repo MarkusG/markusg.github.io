@@ -3,15 +3,46 @@ layout: default
 ---
 
 <div id="index-container">
-	{%- include profile.html -%}
-	<div id="index-content">
-		<h1>Recent Posts</h1>
-		{%- for post in site.posts limit: 7 -%}
-		<div class="post">
-			<h2 class="post-title"><a href="{{ post.url }}">{{ post.title | escape }}</a></h2>
-			<h3 class="post-date">{{ post.date | date: "%B %d, %Y" }}</h3>
-		</div>
-		{%- endfor -%}
-		<h2 id="view-all-posts"><a href="/archive">view all</a></h2>
-	</div>
+    <div id="index-header">
+        <img id="avatar" src="{{ site.you.avatar }}">
+        <div>
+            <p id="blurb">
+                Hi there! I'm Mark, a Software Engineer and Mathematics
+                student from Orange County, California. I currently work for
+                Roland DGA in Irvine (although I'm contracted out to work for
+                DGSHAPE, our sibling company in Japan), and study at the
+                University of California, Los Angeles. This site primarily
+                serves as a place for me to share my work, and any opinions
+                I've put enough thought into to want to share publicly.
+            </p>
+            <div class="icon-group">
+                {% if site.you.github %}
+                <a href="{{ site.you.github }}">
+                    <img class="icon" src="assets/svg/github.svg">
+                </a>
+                {% endif %}
+                {% if site.you.linkedin %}
+                <a href="{{ site.you.linkedin }}">
+                    <img class="icon" src="assets/svg/linkedin.svg">
+                </a>
+                {% endif %}
+                {% if site.you.pubkey %}
+                <a href="{{ site.you.pubkey }}">
+                    <img class="icon" src="assets/svg/key.svg">
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <hr id="index-separator"/>
+    <div id="index-content">
+        <h1>Recent Posts</h1>
+        {%- for post in site.posts limit: 7 -%}
+        <div class="post">
+            <h2 class="post-title"><a href="{{ post.url }}">{{ post.title | escape }}</a></h2>
+            <h3 class="post-date">{{ post.date | date: "%B %d, %Y" }}</h3>
+        </div>
+        {%- endfor -%}
+        <h2 id="view-all-posts"><a href="/archive">view all</a></h2>
+    </div>
 </div>

@@ -82,9 +82,9 @@ pre.highlight {
 }
 
 .container {
-	width: 1200px;
+	width: 720px;
 	max-width: 90%;
-	margin: 1rem auto 0 auto;
+	margin: 1rem auto 2rem auto;
 }
 
 #back-to-top {
@@ -118,7 +118,7 @@ nav a {
 }
 
 #nav-container {
-	width: 1200px;
+	width: 720px;
 	max-width: 90%;
 	margin: auto;
 	display: flex;
@@ -162,71 +162,22 @@ nav a {
 	}
 }
 
-// profile.html
-
-#avatar {
-	width: 200px;
-	height: 200px;
-	border-radius: 10px;
-}
-
-#profile-name {
-	margin-top: .6rem;
-	margin-bottom: .6rem;
-	font-size: 1.6rem;
-}
-
-#profile p {
-	word-break: break-all;
-}
-
-.icon-group {
-	display: flex;
-	gap: .7rem;
-}
-
-.profile-icon {
-	width: 24px;
-}
-
-@media screen and (max-width: 768px) {
-	#profile {
-		text-align: center;
-	}
-
-	#avatar {
-		width: 300px;
-		height: 300px;
-	}
-
-	#profile-name {
-		display: none;
-	}
-
-	.icon-group {
-		margin-top: 2rem;
-		justify-content: center;
-		gap: 3em;
-	}
-
-	.profile-icon {
-		width: 48px;
-	}
-}
-
 // index.html
 
-#index-container {
-	display: flex;
-	gap: 2rem;
+#index-header {
+    display: flex;
+    height: 220px;
+    gap: 1.2rem;
+    margin-bottom: 1.2rem;
 }
 
-#profile {
-	min-width: 200px;
+#index-separator {
+    margin: 2em 0;
 }
 
 #index-content h1 {
-	font-size: 3rem;
+	font-size: 2.4rem;
+        text-align: center;
 }
 
 #index-content hr {
@@ -241,10 +192,44 @@ nav a {
 	font-size: 1.3rem;
 }
 
+#avatar {
+	height: 100%;
+	border-radius: 10px;
+}
+
+.icon-group {
+	display: flex;
+	gap: .7rem;
+}
+
+.icon {
+	width: 24px;
+}
+
 @media screen and (max-width: 768px) {
 	#index-container {
 		display: flex;
 		flex-direction: column;
+	}
+
+        #index-header {
+            flex-direction: column;
+            height: auto;
+        }
+
+	#avatar {
+		width: 300px;
+		height: 300px;
+	}
+
+	.icon-group {
+		margin-top: 2rem;
+		justify-content: center;
+		gap: 3em;
+	}
+
+	.icon {
+		width: 32px;
 	}
 }
 
