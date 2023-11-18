@@ -6,6 +6,12 @@ body {
 	margin: 0;
 }
 
+@media screen and (max-width: 768px) {
+    body {
+        background-color: #fff;
+    }
+}
+
 h1, h2, h3, h4, h5 {
 	font-weight: normal;
 }
@@ -85,6 +91,9 @@ pre.highlight {
 	width: 720px;
 	max-width: 90%;
 	margin: 1rem auto 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    filter: drop-shadow(0 0 3px gray);
 }
 
 #back-to-top {
@@ -96,6 +105,8 @@ pre.highlight {
 @media screen and (max-width: 768px) {
 	.container {
 		margin-bottom: 2rem;
+        padding: 0;
+        filter: none;
 	}
 
 	#index-content {
@@ -111,6 +122,7 @@ pre.highlight {
 
 nav {
 	background-color: #fff;
+    filter: drop-shadow(0 0 5px gray);
 }
 
 nav a {
