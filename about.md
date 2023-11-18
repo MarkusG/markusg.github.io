@@ -10,4 +10,3 @@ platforms:
 
 - [GitHub](https://github.com/MarkusG)
 - [LinkedIn](https://www.linkedin.com/in/mark-gross-a73266173/)
-- [Twitter](https://twitter.com/Mark__Gross)
