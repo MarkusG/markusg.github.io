@@ -273,16 +273,42 @@ nav a {
 
 // gallery.html
 
+	// width: 720px;
+	// max-width: 90%;
+	// margin: 1rem auto 2rem auto;
+    // padding: 2rem;
+    // background-color: white;
+    // filter: drop-shadow(0 0 3px gray);
+
 .gallery-container {
     width: calc(100vw - 6rem);
-    max-width: 900px;
+    max-width: 1644px;
+    background-color: #eee;
+    filter: none;
 }
 
 .gallery {
     display: grid;
     grid-template-rows: .5fr .5fr .5fr .2fr .5fr .2fr 1fr;
     grid-template-columns: repeat(12, 1fr);
-    gap: .2rem;
+    gap: .5rem;
+}
+
+.gallery div {
+    padding: .3rem;
+    background-color: white;
+    filter: drop-shadow(0 0 3px gray);
+}
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        gap: .2rem;
+    }
+
+    .gallery div {
+        padding: 0;
+        filter: none;
+    }
 }
 
 .photo {
