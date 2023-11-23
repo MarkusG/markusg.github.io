@@ -32,7 +32,6 @@ a {
 img {
 	display: block;
 	max-width: 100%;
-	max-height: 400px;
 	margin: auto;
 }
 
@@ -147,6 +146,8 @@ nav a {
 #nav-links {
 	list-style: none;
 	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #nav-links li {
@@ -167,10 +168,11 @@ nav a {
 
 	#nav-links {
 		padding: 0;
+        gap: .5rem;
+        justify-content: space-between;
 	}
 
 	#nav-links li a {
-		padding: 1em 0;
 		margin: 0 .5em;
 	}
 }
@@ -267,4 +269,22 @@ nav a {
 
 .post-content {
 	margin-bottom: 50vh;
+}
+
+// gallery.html
+
+.gallery-container {
+    width: calc(100vw - 6rem);
+    max-width: 900px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-rows: .5fr .5fr .5fr .2fr .5fr .2fr 1fr;
+    grid-template-columns: repeat(12, 1fr);
+    gap: .2rem;
+}
+
+.photo {
+    object-fit: cover;
 }
