@@ -198,6 +198,12 @@ nav a {
     margin-bottom: 1.2rem;
 }
 
+#index-header > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 #index-separator {
     margin: 2em 0;
 }
